@@ -35,3 +35,7 @@ public class CharExample {
 대입 안 하고 단순 초기화: char v = ' ';
     작은 따옴표를 이어 붙이면 컴파일 에러. 무조건 공백 하나 넣어야 함.
  */
+
+ /*
+  추후 String 배움
+  */
