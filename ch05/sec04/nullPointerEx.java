@@ -26,5 +26,4 @@ null과 NullPointerException(예외)
     NullPointerException
     : 객체 null인데 데이터나 메소드 사용하려 할 때 발생하는 오류(예외)
         (ex) .length() / arr1[0] = 2; ...
-    
 */
