@@ -16,6 +16,21 @@ public class stringSummary {
         if(hobby.equals(" ")){ // true. String 객체이므로 equlas로 비교해야 함
             System.out.println("hobby가 참조하는 객체는 빈 문자열");
         }
+
+        /* 문자 추출 */
+        String ssn = "9506241230123";   // 주민등록번호
+        char sex = ssn.charAt(6); // 7번째 문자 == 성별 나타냄
+        switch (sex) {
+            case '1':
+            case '3':
+                System.out.println("남자입니다.");
+                break;
+        
+            case '2':
+            case '4':
+                System.out.println("여자입니다.");
+                break;
+        }
     }
 }
 
@@ -37,4 +52,5 @@ public class stringSummary {
     
 
     * 문자 추출
+        charAt() 메소드 -> 넣은 인덱스의 문자 리턴.
 */
