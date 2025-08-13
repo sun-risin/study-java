@@ -1,4 +1,4 @@
-package ch05.ch04;
+package ch05.sec04;
 
 public class nullPointerEx {
     public static void main(String args[]){

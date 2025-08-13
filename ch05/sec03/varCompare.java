@@ -1,4 +1,4 @@
-package ch05.ch03;
+package ch05.sec03;
 
 public class varCompare {
     public static void main(String args[]){

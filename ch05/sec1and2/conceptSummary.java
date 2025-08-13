@@ -1,4 +1,4 @@
-package ch05.ch0102;
+package ch05.sec1and2;
 
 public class conceptSummary {
     public static void main(String args[]){
