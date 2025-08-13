@@ -1,7 +1,9 @@
 package ch05.sec05;
 
+import java.util.Scanner;
+
 public class stringSummary {
-    public static void main(String args[]){
+    public static void main(String[] args){
         /* 문자열 비교 */
         String str1 = "홍길동";
         String str2 = "홍길동";
@@ -43,6 +45,30 @@ public class stringSummary {
         String newSsn = ssn.replace("95", "94");
         System.out.println("기존 문자열: " + ssn);
         System.out.println("새로운 문자열: " + newSsn);
+
+        /* 문자열 잘라내기 */
+        String newSex = ssn.substring(6, 7);
+        System.out.println(sex == (newSex.charAt(0))); // true
+
+        /* 문자열 찾기 */
+        String stat = "파이썬, 스프링부트, 자바 공부중";
+        boolean check = stat.contains("자바"); // 포함 검사
+        if (check){
+            int idx = stat.indexOf("자바"); // 위치
+            System.out.print("필자는 자바를 공부 중이며, 해당 내용은 ");
+            System.out.println(idx + "번 인덱스부터 기술되어 있다.");
+        }
+
+        /* 문자열 분리 */
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("3반 학생 이름: ");
+        String names = scanner.nextLine();
+        String[] namesLi = names.split(" ");
+        
+        System.out.println("3반 출석 부르겠습니다.");
+        for(int i = 0; i < namesLi.length; i++){
+            System.out.println(namesLi[i]);
+        }
     }
 }
 
@@ -71,4 +97,19 @@ public class stringSummary {
 
     * 문자열 대체 (매개변수: 기존값, 변경값)
         replace() 메소드 -> 기존 문자열 변화 X 새 문자열 리턴
+
+    * 문자열 잘라내기 (슬라이싱)
+        substring() 메소드
+            1. 시작 인덱스만 작성: 시작인덱스~끝까지
+            2. 시작 인덱스, 끝 인덱스: 시작인덱스~끝인덱스-1까지 
+    
+    * 문자열 찾기 (인덱스 찾기)
+        indexOf() 메소드 -> 문자열 매개, 첫 시작 인덱스 리턴
+        포함되지 않은 문자열을 찾게 되면 -1 리턴
+
+        (+) 문자열 포함돼있는지 조사? : contains() 메소드
+            true or false 리턴
+    
+    * 문자열 분리
+        split() 메소드 -> 특정 문자열을 기준으로 분리 가능, 배열 리턴
 */
