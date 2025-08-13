@@ -31,6 +31,18 @@ public class stringSummary {
                 System.out.println("여자입니다.");
                 break;
         }
+
+        /* 문자열 길이 */
+        if (ssn.length() == 13){
+            System.out.println("주민등록번호 자릿수가 알맞습니다.");
+        }else{
+            System.out.println("주민등록번호 자릿수가 맞지 않습니다.");
+        }
+
+        /* 문자열 대체 */
+        String newSsn = ssn.replace("95", "94");
+        System.out.println("기존 문자열: " + ssn);
+        System.out.println("새로운 문자열: " + newSsn);
     }
 }
 
@@ -53,4 +65,10 @@ public class stringSummary {
 
     * 문자 추출
         charAt() 메소드 -> 넣은 인덱스의 문자 리턴.
+
+    * 문자열 길이
+        length() 메소드 -> 문자 개수 리턴. (마지막 인덱스= 길이-1)
+
+    * 문자열 대체 (매개변수: 기존값, 변경값)
+        replace() 메소드 -> 기존 문자열 변화 X 새 문자열 리턴
 */
