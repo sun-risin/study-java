@@ -8,7 +8,6 @@
     2-1. Gradle과 Spring Boot 3.x 버전 (소괄호 있는 거 X)
 
     2-2. 오른쪽에 기본 라이브러리 설치
-        
         -> Spring Web, Spring Boot DevTools
 
     2-3. Group에는 회사명, Name에는 프로젝트명 작명
@@ -22,6 +21,7 @@
     3-1. SDK 버전 확인 -> 생성한 프로젝트 설정 버전 이상
 
     3-2. build tool 선택 (IntelliJ IDEA로) -> 선택사항
+    
         3-2-1. Java Compiler 메뉴에서 -parameters 확인
 
 ### 프로젝트 파일 설명
