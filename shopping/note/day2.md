@@ -20,14 +20,13 @@
     - 각 페이지에 매핑 한 개 가능, 각 매핑에 메소드 한 개 가능
     - url 부분에 /페이지명 작성 시 해당 페이지 생성 및 기능 작성 가능
     - 코드
-        <pre>
-        ```java
+    ```java
         @GetMapping("/")    // 메인 페이지 접속 시
         @ResponseBody       // 문자 그대로를 보내게 하는 역할 (파일 보낼 시 삭제)
         String hello(){     // 기능
             return "hello"; // hello 내용 보냄 (페이지에 보임)
-        }```
-        </pre>
+        }
+    ```
 
 3. html 보내는 법: return 문자열에 html 코드 작성
 
@@ -36,29 +35,27 @@
     4-1. resources/static에 파일 생성 및 보관
 
     4-2. ResponseBody를 제외한 기본틀에 코드 작성
-        <pre>
-        ```java
+    ```java
         @GetMapping("/send")
         String send(){
             return "index.html"; // resources/static에 있는 파일! == 기본 경로
                                 // 하위 폴더에 있는 파일이라면 폴더명/파일명
-        }```
-        </pre>
+        }
+    ```
 
 #### 숙제 - 오늘 날짜 및 시각을 date 페이지에 띄우기
-<pre>
 ```java
-@GetMapping("/date")
-@ResponseBody
-String date(){
-    LocalDateTime now = LocalDateTime.now();
-    String formatedNow = now.format(DateTimeFormatter.ofPattern("yyyy.MM.dd(HH:mm:ss)"));
+    @GetMapping("/date")
+    @ResponseBody
+    String date(){
+        LocalDateTime now = LocalDateTime.now();
+        String formatedNow = now.format(DateTimeFormatter.ofPattern("yyyy.MM.dd(HH:mm:ss)"));
 
-    return formatedNow;
-    // return LocalDateTime.now().toString();
-    // return ZonedDateTime.now().toString();
-}```
-</pre>
+        return formatedNow;
+        // return LocalDateTime.now().toString();
+        // return ZonedDateTime.now().toString();
+    }
+```
 
 #### 이외 메모
 - java 파일 만들 때 
