@@ -21,12 +21,12 @@
     3-1. SDK 버전 확인 -> 생성한 프로젝트 설정 버전 이상
 
     3-2. build tool 선택 (IntelliJ IDEA로) -> 선택사항
-
-        3-2-1. Java Compiler 메뉴에서 -parameters 확인
+    
+    (Java Compiler 메뉴에서 -parameters 확인)
 
 ### 프로젝트 파일 설명
 - src 폴더 : 실제로 코드 짜는 곳
 - resources 폴더 : HTML CSS JavaScript 이미지 등 하찮은 파일 보관소
 - application.properties 파일 : 환경변수나 프로젝트 설정 보관하는 곳
 - build.gradle 파일 : 프로젝트 이름, 버전, 라이브러리 등 기록용 파일
-- gradle 어쩌구 : gradle이라는 작업자동화 프로그램 돌리는거 도와주는 파일들이라 건드릴 일 없음
+- gradle~ : gradle이라는 작업자동화 프로그램 돌리는거 도와주는 파일들, 건드릴 일 없음
