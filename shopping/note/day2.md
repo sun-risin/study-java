@@ -10,13 +10,11 @@
 오늘은 페이지 갖다 주는 것만 할 예정
 
 ### 수업 내용
-1. 서버 기능 만들기
-
-    1-1. @Controller 바로 밑 class에 서버 기능 작성 가능 (위에 관련 import 필수)
-
+1. 서버 기능 만들기  
+    1-1. @Controller 바로 밑 class에 서버 기능 작성 가능 (위에 관련 import 필수)  
     1-2. 기본틀 (GetMapping(url) 등...) 작성 후 메소드(기능) 작성
 
-2. 서버에서 데이터 보내주는 법
+2. 서버에서 데이터 보내주는 법  
     - 각 페이지에 매핑 한 개 가능, 각 매핑에 메소드 한 개 가능
     - url 부분에 /페이지명 작성 시 해당 페이지 생성 및 기능 작성 가능
     - 코드
@@ -30,10 +28,8 @@
 
 3. html 보내는 법: return 문자열에 html 코드 작성
 
-4. html 파일 보내주는 법
-    
-    4-1. resources/static에 파일 생성 및 보관
-
+4. html 파일 보내주는 법  
+    4-1. resources/static에 파일 생성 및 보관  
     4-2. ResponseBody를 제외한 기본틀에 코드 작성
     ```java
         @GetMapping("/send")
@@ -58,13 +54,13 @@
 ```
 
 #### 이외 메모
-- java 파일 만들 때 
+- java 파일 만들 때  
 new > java class 누르면 편함
-- html 파일 만들 때 
+- html 파일 만들 때  
 new > html > 빈 파일 내용에 !치고 엔터 누르면 기본 틀
-- sout 엔터
+- sout 엔터  
 System.out.println();
-- @~ 엔터
+- @~ 엔터  
 위에 import 자동 생성
-- 동일 파일 main 함수 내에 코드를 짜지 않았는데 연결되는 이유
+- 동일 파일 main 함수 내에 코드를 짜지 않았는데 연결되는 이유  
 @Controller 밑에 있는 클래스를 spring framework가 챙겨서 main함수에 집어 넣어 실행시켜주기 때문이다.
