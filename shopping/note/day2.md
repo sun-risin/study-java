@@ -39,7 +39,7 @@
                                 // 하위 폴더에 있는 파일이라면 폴더명/파일명
         }
 
-#### 숙제 - 오늘 날짜 및 시각을 date 페이지에 띄우기
+### 숙제 - 오늘 날짜 및 시각을 date 페이지에 띄우기
         @GetMapping("/date")
         @ResponseBody
         String date(){
@@ -52,4 +52,13 @@
         }
 
 #### 이외 메모
-그 어떻게 main 어쩌고 그 내용 정리하자
+- java 파일 만들 때 
+new > java class 누르면 편함
+- html 파일 만들 때 
+new > html > 빈 파일 내용에 !치고 엔터 누르면 기본 틀
+- sout 엔터
+System.out.println();
+- @~ 엔터
+위에 import 자동 생성
+- 동일 파일 main 함수 내에 코드를 짜지 않았는데 연결되는 이유
+@Controller 밑에 있는 클래스를 spring framework가 챙겨서 main함수에 집어 넣어 실행시켜주기 때문이다.
