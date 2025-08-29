@@ -4,8 +4,11 @@
 ### 순서
 1. IntelliJ community edition 에디터 설치 (무료버전)
 2. Spring initializr에서 프로젝트 생성
+
     2-1. Gradle과 Spring Boot 3.x 버전 (소괄호 있는 거 X)
+
     2-2. 오른쪽에 기본 라이브러리 설치
+        
         -> Spring Web, Spring Boot DevTools
 
     2-3. Group에는 회사명, Name에는 프로젝트명 작명
@@ -15,7 +18,9 @@
     2-5. 다운받아서 압축풀기.
         에디터에서 프로젝트 폴더 오픈하면 코딩시작가능
 3. 에디터에서 프로젝트 오픈
+
     3-1. SDK 버전 확인 -> 생성한 프로젝트 설정 버전 이상
+
     3-2. build tool 선택 (IntelliJ IDEA로) -> 선택사항
         3-2-1. Java Compiler 메뉴에서 -parameters 확인
 
