@@ -21,7 +21,7 @@
     3-1. SDK 버전 확인 -> 생성한 프로젝트 설정 버전 이상
 
     3-2. build tool 선택 (IntelliJ IDEA로) -> 선택사항
-    
+
         3-2-1. Java Compiler 메뉴에서 -parameters 확인
 
 ### 프로젝트 파일 설명
