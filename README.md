@@ -1,4 +1,4 @@
-springboot 강의 정리 브랜치
+## springboot 강의 정리 브랜치
 
 ### src
 spring boot 코드 (intelliJ에서 작성한 것 일부)
